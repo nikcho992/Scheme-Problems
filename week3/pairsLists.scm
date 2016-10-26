@@ -10,8 +10,6 @@
 (define (multRat rat1 rat2)
 (cons (* (car rat1) (car rat2)) (* (cdr rat1) (cdr rat2))))
 
-(define (addRat rat1 rat2)
-(cons (+ (car rat1) (car rat2)) (* (cdr rat1) (cdr rat2))))
 
 (define (len koko)
   (if (null? koko) 0
@@ -21,7 +19,6 @@
   
 (define (isMem koko x)
       (if (null? koko) 0
-	  ;тук тр€бва да провер€вам (deep search-вам),но силата още не е с мен.
 	  (if (= (car koko) x) 1
 	    (isMem (cdr koko) x))))
 
