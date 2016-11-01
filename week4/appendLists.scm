@@ -1,0 +1,6 @@
+(define (appendLists koko koko2)
+  (if (null? koko)
+    `()
+      (cons (car koko) (cdr koko))
+	when(null? koko)
+	(cons (cdr koko2) (cdr koko2))))
