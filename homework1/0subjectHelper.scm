@@ -1,0 +1,7 @@
+(define (subject-helper number lst)
+  (if (null? lst)
+    `()
+    (if (= number (car (car lst)))
+      ;долу правя всевъзможни древни магии,за да докарам output-a от условието и да няма скоби (ако изобщо съм го разбрал правилно)
+      (and (display " [HOMEWORK] " ) (display number) (display " ")  (cadar lst)) 
+	(subject-helper number (cdr lst)))))
